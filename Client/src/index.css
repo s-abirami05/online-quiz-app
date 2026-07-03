@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(135deg,
+      #2d1027,
+      #8a1e78,
+      #eb25d4);
+
+  background-size: cover;
+}
+
+.login-container,
+.quiz-container,
+.result-container {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+}
+
+.login-card,
+.quiz-card,
+.result-card {
+
+  width: 650px;
+
+  background: #ffffff;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 40px rgba(0,
+      0,
+      0,
+      0.3);
+
+  animation: fade 0.5s ease;
+}
+
+.login-card h1,
+.result-card h1 {
+
+  text-align: center;
+
+  color: #1e3a8a;
+
+  margin-bottom: 25px;
+
+  font-size: 35px;
+}
+
+.quiz-card h2 {
+
+  color: #2563eb;
+
+  margin-bottom: 15px;
+}
+
+.quiz-card h3 {
+
+  color: #111827;
+
+  margin-bottom: 20px;
+
+  line-height: 1.5;
+}
+
+.login-card input {
+
+  width: 100%;
+
+  padding: 15px;
+
+  margin-top: 18px;
+
+  border: 2px solid #cbd5e1;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+.login-card input:focus {
+
+  border-color: #2563eb;
+}
+
+.login-card button,
+.next-btn {
+
+  width: 100%;
+
+  padding: 15px;
+
+  margin-top: 25px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(135deg,
+      #2563eb,
+      #1d4ed8);
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.login-card button:hover,
+.next-btn:hover {
+
+  transform: scale(1.02);
+
+  background:
+    linear-gradient(135deg,
+      #1d4ed8,
+      #1e40af);
+}
+
+.options {
+
+  margin-top: 20px;
+}
+
+.option-label {
+
+  display: flex;
+
+  align-items: center;
+
+  background: #f8fafc;
+
+  color: #111827;
+
+  padding: 16px;
+
+  border-radius: 12px;
+
+  margin-top: 15px;
+
+  cursor: pointer;
+
+  border: 2px solid transparent;
+
+  transition: 0.3s;
+}
+
+.option-label:hover {
+
+  border-color: #2563eb;
+
+  background: #dbeafe;
+}
+
+.option-label input {
+
+  margin-right: 12px;
+
+  transform: scale(1.2);
+}
+
+.popup {
+
+  margin-top: 20px;
+
+  background: #ef4444;
+
+  color: white;
+
+  padding: 14px;
+
+  border-radius: 12px;
+
+  text-align: center;
+
+  font-weight: bold;
+
+  animation: popup 0.3s ease;
+}
+
+.result-card h2 {
+
+  text-align: center;
+
+  color: #111827;
+
+  margin-top: 15px;
+}
+
+.result-card h1:last-child {
+
+  font-size: 60px;
+
+  color: #2563eb;
+
+  margin-top: 20px;
+}
+
+@keyframes popup {
+
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
