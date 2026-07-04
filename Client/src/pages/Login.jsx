@@ -47,7 +47,7 @@ function Login() {
             <div className="login-card">
 
                 <h1>
-                    General Knowledge Quiz
+                    Online Quiz Application
                 </h1>
                 <input
                     type="text"
