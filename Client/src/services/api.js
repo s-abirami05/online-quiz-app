@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-  "http://127.0.0.1:5000";
+  "https://online-quiz-app-kaay.onrender.com";
 
 export const getQuestions =
   async () => {
