@@ -33,7 +33,7 @@ def submit():
 
     data = request.json
 
-    save_result(data)
+    #save_result(data)
 
     return jsonify({
         "message":
